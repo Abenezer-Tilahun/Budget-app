@@ -1,4 +1,4 @@
-class HomeController < ApplicationController
+class SplashController < ApplicationController
   before_action :check_signed_in
 
   def index; end
