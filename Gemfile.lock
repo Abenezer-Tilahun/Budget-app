@@ -292,7 +292,7 @@ DEPENDENCIES
   debug
   devise
   font-ionicons-rails!
-  image_processing (~> 1.2)
+  image_processing (>= 1.2)
   importmap-rails
   jbuilder
   jquery-rails
