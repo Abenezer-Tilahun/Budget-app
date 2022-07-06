@@ -3,6 +3,7 @@
 <section class="user-expenses">
   <div class="user__amount">
     <div class="user__title">Edit User</div>
+    <%= image_tag avatar_url(@user), :class => "avatar"%>
     <div class="user__option category-title">
       <ion-icon name="person-circle-outline"></ion-icon>
       <%= f.text_field :name, :placeholder => "Name", :class => "option-text" %>
