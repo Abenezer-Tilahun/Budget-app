@@ -13,5 +13,7 @@ Rails.application.routes.draw do
 
   resources :splash, only:[:index]
   resources :users, only: [:show, :income, :update, :destroy]
-  resources :groups, only: [:index,:show , :new, :create, :destroy]
+  resources :groups, only: [:index ,:show, :new, :create,  :destroy] do
+    resources :entities, only: [:index, :show, :new, :create, :destroy]
+  end
 end
