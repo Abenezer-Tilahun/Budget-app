@@ -1,7 +1,14 @@
 # Budget-app
 > A Budget-app is mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
-![](./)
+> Splash Screen
+![](./Images/splash.PNG)
+
+> Home page
+![](./Images/Home.PNG)
+
+> The goal of the project is to build the RoR application using Ruby on Rails by ruby gems as software packages system.   
+Click [Live](https://budget-app21.herokuapp.com/) to get a live preview of the project.
 
 ## EDR diagram
 
@@ -17,6 +24,7 @@
 - to run test `bundle exec rspec`
 
 ## Tests
+
 Diffult (run all spec files):
 
 `bundle exec rspec`
@@ -31,11 +39,7 @@ Run all spec files in a single directory:
 
 Run a single spec file:
 
-`bundle exec rspec spec/views/login_page_spec.rb`
-
-Run a single example from a spec file(by line number):
-
-`bundle exec rspec spec/controllers/users_controller_spec.rb:8`
+`bundle exec rspec spec/integrations/login_spec.rb`
 
 See all options for running specs:
 
