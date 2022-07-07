@@ -4,6 +4,8 @@ class GroupsController < ApplicationController
 
   def index
     @groups = Group.where(user_id: current_user.id).order(created_at: :desc)
+    @entities = current_user.entities.where(group_id: params[:group_id]).order(created_at: :desc)
+    current_user.total_expenses = current_user.entities.sum(:amount).round(2)
   end
 
   def new
