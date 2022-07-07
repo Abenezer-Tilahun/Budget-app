@@ -40,6 +40,9 @@ gem 'tailwindcss-rails', '~> 2.0'
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem 'bcrypt', '~> 3.1.7'
 
+# Use Active Storage variant
+gem 'image_processing', '>= 1.2'
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data'
 
@@ -47,7 +50,23 @@ gem 'tzinfo-data'
 gem 'bootsnap', require: false
 
 # Use Sass to process CSS
-# gem 'sassc-rails'
+gem 'sass-rails', '>= 6'
+
+# Prettier
+gem 'prettier'
+
+# IonIcons
+gem 'font-ionicons-rails', git: 'https://github.com/ricardoemerson/font-ionicons-rails.git'
+
+# Bootstraps
+
+gem 'bootstrap-sass', '3.4.1'
+
+# Jquery-rails
+gem 'jquery-rails'
+
+# CanCan
+gem 'cancancan'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem 'image_processing', '~> 1.2'
@@ -55,6 +74,7 @@ gem 'bootsnap', require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'rspec-rails', '~> 5.0.0'
 end
 
 group :development do
