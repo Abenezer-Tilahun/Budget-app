@@ -490,13 +490,39 @@ input:-webkit-autofill:active {
   font-weight: 400;
 }
 
-.tranactions {
+.transactions {
   display: flex;
   flex-direction: column;
   height: 100%;
   padding: 0 2rem;
   margin-bottom: -2rem;
   overflow: hidden;
+}
+
+.selections button {
+  font-family: bold;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 0.7rem;
+  margin: 1rem 2rem;
+  border-radius: 1rem;
+  border-color: black;
+}
+
+.transactions button {
+  font-family: bold;
+  font-size: 10px;
+  background-color: #fff;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  border-color: black;
+}
+
+.transactions button:hover {
+  background-color: red;
+  border: none;
 }
 
 .title {
@@ -731,6 +757,11 @@ input:-webkit-autofill:active {
   background-color: #fff;
   margin: 2rem;
   border-radius: 1rem;
+}
+
+.selections button:hover {
+  background-color: red;
+  border: none;
 }
 
 .selection {
